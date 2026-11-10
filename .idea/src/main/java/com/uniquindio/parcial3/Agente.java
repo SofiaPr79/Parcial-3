@@ -1,4 +1,6 @@
 package com.uniquindio.parcial3;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Agente extends Participante{
     private int nivel;
@@ -38,7 +40,7 @@ public class Agente extends Participante{
 
     // Coordina la atención técnica del ticket a través del mediador
     public void atenderTicket(Ticket ticket) {
-        mediador.atenderTicket(this, ticket);
+        getMediador().atenderTicket(this, ticket);
     }
 
     // Solicita la resolución del ticket a través del mediador

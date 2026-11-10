@@ -1,8 +1,8 @@
 package com.uniquindio.parcial3;
 
 public abstract class Participante {
-        protected String nombre;
-        protected Mediador mediador;
+        private String nombre;
+        private Mediador mediador;
 
         public Participante(String nombre, Mediador mediador) {
             this.nombre = nombre;
